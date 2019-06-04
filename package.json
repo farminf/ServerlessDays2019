@@ -1,0 +1,15 @@
+{
+  "name": "serverlessDays2019",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "mdx-deck deck.mdx"
+  },
+  "keywords": [],
+  "author": "farminf<farmin.f@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "mdx-deck": "^2.3.2"
+  }
+}
