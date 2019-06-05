@@ -1,0 +1,14 @@
+{
+  "name": "code-your-infrastructure-with-your-favorite-language",
+  "alias": "code-your-infrastructure-with-your-favorite-language.now.sh",
+  "public": true,
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@now/static-build",
+      "config": {
+        "distDir": "dist"
+      }
+    }
+  ]
+}
