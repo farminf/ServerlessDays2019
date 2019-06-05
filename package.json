@@ -4,14 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "mdx-deck deck.mdx",
-    "build": "mdx-deck build deck.mdx",
-    "help": "mdx-deck"
+    "start": "mdx-deck deck.js",
+    "build": "mdx-deck build deck.js",
+    "help": "mdx-deck",
+    "now-build": "mdx-deck build deck.js"
   },
   "keywords": [],
   "author": "farminf<farmin.f@gmail.com>",
   "license": "ISC",
   "devDependencies": {
-    "mdx-deck": "^2.3.2"
+    "mdx-deck": "1.10.2"
   }
 }
