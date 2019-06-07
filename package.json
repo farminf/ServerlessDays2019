@@ -13,6 +13,8 @@
   "author": "farminf<farmin.f@gmail.com>",
   "license": "ISC",
   "devDependencies": {
-    "mdx-deck": "1.10.2"
+    "mdx-deck": "1.10.2",
+    "mdx-deck-code-surfer": "^0.5.5",
+    "raw-loader": "^3.0.0"
   }
 }
