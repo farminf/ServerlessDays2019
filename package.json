@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "mdx-deck deck.js",
-    "build": "mdx-deck build deck.js",
+    "start": "mdx-deck main.mdx",
+    "build": "mdx-deck build main.mdx",
     "help": "mdx-deck",
-    "now-build": "mdx-deck build deck.js"
+    "now-build": "mdx-deck build main.mdx"
   },
   "keywords": [],
   "author": "farminf<farmin.f@gmail.com>",
@@ -16,5 +16,8 @@
     "mdx-deck": "1.10.2",
     "mdx-deck-code-surfer": "^0.5.5",
     "raw-loader": "^3.0.0"
+  },
+  "dependencies": {
+    "image-webpack-loader": "^5.0.0"
   }
 }

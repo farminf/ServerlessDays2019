@@ -2,7 +2,7 @@ import React from "react";
 import { white } from "ansi-colors";
 
 const Provider = props => {
-  const { slides, index, mode, step } = props;
+  const {  index, mode, step } = props;
   return (
     <div>
       {props.children}
@@ -15,7 +15,7 @@ const Provider = props => {
           color: "white"
         }}
       >
-        slides: {slides}, index: {index}, mode: {mode}, step: {step}
+         index: {index}, mode: {mode}, step: {step}
       </div>
     </div>
   );
