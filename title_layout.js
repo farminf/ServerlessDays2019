@@ -18,7 +18,7 @@ export default ({ children }) => (
       
       <p>Farmin Farzin</p>
       <p>@farminfarzin</p>
-      {/* <img href={daImage}></img> */}
+      <img src={daImage} width="100px" height="100px"></img>
 
     </div>
   </div>
