@@ -5,11 +5,12 @@ import code from "!raw-loader!./code.js";
 export { dark as theme } from "mdx-deck/themes";
 import theme from "./theme";
 import nightOwl from "prism-react-renderer/themes/nightOwl";
-import Layout from "./title_layout";
+import titleLayout from "./title_layout";
+import Layout from "./layout";
 
 # Code Your Infrastructure With Your Favorite Language!
 
-export default Layout;
+export default titleLayout;
 
 ---
 
@@ -18,6 +19,7 @@ export default Layout;
 ```notes
 Only visible in presenter mode
 ```
+
 
 ---
 
@@ -31,6 +33,7 @@ Only visible in presenter mode
   </Appear>
 </ul>
 
+
 ---
 
 export default Split;
@@ -38,6 +41,7 @@ export default Split;
 ![](arizona.jpg)
 
 # Arizona
+
 
 ---
 
@@ -50,6 +54,7 @@ const apiGateway = require("@aws-cdk/aws-apigateway");
 const cdk = require("@aws-cdk/cdk");
 const iam = require("@aws-cdk/aws-iam");
 ```
+
 
 ---
 
@@ -66,3 +71,4 @@ const iam = require("@aws-cdk/aws-iam");
     { tokens: { 9: [3, 4, 5] }, notes: "Note for the third step" }
   ]}
 />
+
