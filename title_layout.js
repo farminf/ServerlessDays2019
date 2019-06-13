@@ -1,5 +1,5 @@
 import React from "react"
-import daImage from "./da-icon.png"
+import daImage from "./images/da-icon.png"
 
 
 export default ({ children }) => (

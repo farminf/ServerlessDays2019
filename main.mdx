@@ -1,4 +1,4 @@
-import { Appear } from "mdx-deck";
+import { Image, Head, Appear } from "mdx-deck";
 import { Split, FullScreenCode } from "mdx-deck/layouts";
 import { CodeSurfer } from "mdx-deck-code-surfer";
 import code from "!raw-loader!./code.js";
@@ -8,37 +8,38 @@ import nightOwl from "prism-react-renderer/themes/nightOwl";
 import titleLayout from "./title_layout";
 import Layout from "./layout";
 
+<Head>
+  <title>Code Your Infra</title>
+</Head>
+
 # Code Your Infrastructure With Your Favorite Language!
 
 export default titleLayout;
 
 ---
 
-### High numbers of resource creation requests
+# why Infrastructure as Code?
 
-### Cloud Environment
-
-### Deployment Environments
-
-### Reusability and Scalability
-
-### Versioning
-
----
-
-# So if I need to do it one time, ten times, or a thousand times, can I automate that?
+<ul>
+  <Appear>
+    <p>High numbers of resource creation requests</p>
+    <p>Deployment Environments</p>
+    <p>Reusabipty and Scalability</p>
+    <p>Versioning</p>
+  </Appear>
+</ul>
 
 ---
 
-# CloudFormation
+# AWS CloudFormation
 
 ---
 
-![](images/cfn.png)
+<Image src="images/cfn.svg" />
 
 ---
 
-## cloudformation template example
+<Image src="images/cfn-yaml.svg" />
 
 ---
 
@@ -52,6 +53,8 @@ export default titleLayout;
 
 ---
 
+---
+
 # image of cdk architecture
 
 ---
@@ -60,11 +63,15 @@ export default titleLayout;
 
 ---
 
-# Cons
+# Pros
 
 ---
 
 # very short example of a construct and its equivalent yaml
+
+---
+
+# talk about the register domain example
 
 ---
 
@@ -80,6 +87,14 @@ export default titleLayout;
 
 ---
 
+## Thank you!
+
+@farminfarzin
+
+[CDK workshop : https://cdkworkshop.com/](https://cdkworkshop.com/)
+
+---
+
 # Slide Note
 
 ```notes
@@ -88,21 +103,9 @@ Only visible in presenter mode
 
 ---
 
-# Appear Example
-
-<ul>
-  <Appear>
-    <li>One</li>
-    <li>Two</li>
-    <li>Three</li>
-  </Appear>
-</ul>
-
----
-
 export default Split;
 
-![](arizona.jpg)
+![](images/arizona.jpg)
 
 # Arizona
 
@@ -133,3 +136,7 @@ const iam = require("@aws-cdk/aws-iam");
     { tokens: { 9: [3, 4, 5] }, notes: "Note for the third step" }
   ]}
 />
+
+---
+
+# So if I need to do it one time, ten times, or a thousand times, can I automate that?
