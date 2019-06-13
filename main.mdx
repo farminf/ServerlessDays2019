@@ -7,6 +7,11 @@ import theme from "./theme";
 import nightOwl from "prism-react-renderer/themes/nightOwl";
 import titleLayout from "./title_layout";
 import Layout from "./layout";
+import ts from "./images/ts.png";
+import java from "./images/java.jpg";
+import net from "./images/net.png";
+import python from "./images/python.jpg";
+import js from "./images/js.png";
 
 <Head>
   <title>Code Your Infra</title>
@@ -37,6 +42,15 @@ export default titleLayout;
 
 <Image src="images/cfn.svg" />
 
+```notes
+
+EASY TO AUTOMATE
+REPRODUCIBLE
+CONFIGURATION SYNTAX
+NO ABSTRACTION, LOTS OF DETAILS
+
+```
+
 ---
 
 <Image src="images/cfn-yaml.svg" />
@@ -53,6 +67,16 @@ export default titleLayout;
 
 ---
 
+<div   style={{display: "grid", gridTemplateColumns:"20% 20% 20% 20% 20%", gridTemplateRows:"100%", gridColumnGap: "20px"}}>
+
+<img src={js} width="100px" height="100px" />
+<img src={ts} width="100px" height="100px" />
+<img src={net} width="100px" height="100px" />
+<img src={python} width="100px" height="100px" />
+<img src={java} width="100px" height="100px" />
+
+</div>
+
 ---
 
 # image of cdk architecture
@@ -67,7 +91,11 @@ export default titleLayout;
 
 ---
 
-# very short example of a construct and its equivalent yaml
+export default Split;
+
+![](images/myStack.png)
+
+![](images/myStackarc.png)
 
 ---
 
