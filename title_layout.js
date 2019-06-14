@@ -7,7 +7,7 @@ export default ({ children }) => (
     style={{
       display: "grid",
       gridTemplateColumns: "100%",
-      gridTemplateRows: "80% 20%",
+      gridTemplateRows: "100% 20%",
       backgroundColor: "Black"
     }}>
     {children}

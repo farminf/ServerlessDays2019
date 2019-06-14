@@ -1,22 +1,35 @@
-import React from 'react'
+import React, { Fragment } from 'react'
+import styled from 'styled-components'
 
-export default ({ children }) =>
-  <React.Fragment>
-  <div
-    style={{
-      width: '100vw',
-      height: '100vw',
-      backgroundColor: 'black'
-    }}>
-    {children}
-  </div>
-  <div 
-  style={{
-    width: '100%',
-    height: '10%',
-    backgroundColor: 'tomato'
-  }}
-  >
-    <p>@farminfarzin</p>
-  </div>
-  </React.Fragment>
+const Wrapper = styled.main`
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+`
+
+const Footer = styled.footer`
+  font-size: 14px;
+  color: white;
+  padding: 30px 100px;
+  text-align: right;
+  width: 100vw;
+  border-top: 1px solid #b78883;
+  display: flex;
+  justify-content: space-between;
+`
+
+const Layout = ({ children }) => (
+  <Fragment>
+    <Wrapper>{children}</Wrapper>
+    <Footer>
+      <span></span>
+      <span>@FarminFarzin</span>
+    </Footer>
+  </Fragment>
+)
+
+export default Layout

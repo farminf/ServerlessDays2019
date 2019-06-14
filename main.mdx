@@ -13,6 +13,7 @@ import net from "./images/net.png";
 import python from "./images/python.jpg";
 import js from "./images/js.png";
 import legacy from "./images/legacy.png";
+import cert from "./images/cert.png";
 require.context("./images", true, /\.svg$/);
 require.context("./images", true, /\.png$/);
 require.context("./images", true, /\.jpg$/);
@@ -30,11 +31,13 @@ export default titleLayout;
 
 # why Infrastructure as Code?
 
+export default Layout;
+
 <ul>
   <Appear>
     <p>High numbers of resource creation requests</p>
     <p>Deployment Environments</p>
-    <p>Reusabipty and Scalability</p>
+    <p>Reusability and Scalability</p>
     <p>Versioning</p>
   </Appear>
 </ul>
@@ -48,6 +51,8 @@ everyone is thinking about everything except IaC which should be think of in the
 ---
 
 # AWS CloudFormation
+
+export default Layout;
 
 ---
 
@@ -72,11 +77,15 @@ NO ABSTRACTION, LOTS OF DETAILS
 
 ---
 
+export default Layout;
+
 # CDK
 
 ### Cloud Development Kit
 
 ---
+
+export default Layout;
 
 <div   style={{display: "grid", gridTemplateColumns:"20% 20% 20% 20% 20%", gridTemplateRows:"100%", gridColumnGap: "20px"}}>
 
@@ -90,19 +99,37 @@ NO ABSTRACTION, LOTS OF DETAILS
 
 ---
 
+export default Layout;
+
+## Almost one year
+
+##Currently 0.34.0
+
+---
+
 # image of cdk architecture
 
 ---
 
+export default Layout;
+
 ## cfn and construct
 
 ---
+
+export default Layout;
 
 # Pros
 
 ## best practices
 
 ## code combination
+
+- Multiple Stacks
+- Multi Region
+- Supporting All Resources
+- Not easy but covers 100%
+- imperative programming interface
 
 ---
 
@@ -114,23 +141,40 @@ export default Split;
 
 ---
 
-## Certificate Provision
+## Certificate Provisioning
 
-<img src="images/cert.png" width="1000px" />
+export default Layout;
 
-## CDK custom resources
+<img src={cert} width="1000px" />
 
 ---
 
-## Can we use our existing Yaml/Json files?
+export default Layout;
+
+### Can we use our existing Yaml/Json files?
 
 <img src={legacy} />
 
 ---
 
-# SAM and Amplify
+export default Layout;
+
+## SAM
+
+- Extension of CloudFormation
+- Single Stack
+- Serverless Apps
+- Local debugging and testing
+
+## Amplify
+
+- Focus on the Mobile and Web
+- Specific services
+- Simplicity (easy for beginners)
 
 ---
+
+export default Layout;
 
 # pipeline and development chain
 
@@ -141,6 +185,8 @@ export default Split;
 # @farminfarzin
 
 [CDK workshop : https://cdkworkshop.com/](https://cdkworkshop.com/)
+
+---
 
 ---
 
