@@ -12,7 +12,11 @@ import java from "./images/java.jpg";
 import net from "./images/net.png";
 import python from "./images/python.jpg";
 import js from "./images/js.png";
+import legacy from "./images/legacy.png";
 require.context("./images", true, /\.svg$/);
+require.context("./images", true, /\.png$/);
+require.context("./images", true, /\.jpg$/);
+require.context("./images", true, /\.gif$/);
 
 <Head>
   <title>Code Your Infra</title>
@@ -118,7 +122,9 @@ export default Split;
 
 ---
 
-# Code review
+## Can we use our existing Yaml/Json files?
+
+<img src={legacy} />
 
 ---
 
@@ -183,3 +189,11 @@ steps={[
 ---
 
 # So if I need to do it one time, ten times, or a thousand times, can I automate that?
+
+---
+
+```notes
+more examples like acm
+cdk versions check
+
+```
