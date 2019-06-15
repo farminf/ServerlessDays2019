@@ -16,6 +16,7 @@ import legacy from "./images/legacy.png";
 import cert from "./images/cert.png";
 import myStack from "./images/myStack.png";
 import myStackarc from "./images/myStackarc.png";
+import cdkarc from "./images/cdkarc.png";
 
 <Head>
   <title>Code Your Infra</title>
@@ -105,29 +106,40 @@ export default Layout;
 
 ---
 
-# image of cdk architecture
+<img src={cdkarc} width="1500px" />
 
 ---
 
 export default Layout;
 
-## cfn and construct
+# Constructs
+
+### CloudFormation Resource Library
+
+- Represent all the resources available on AWS
+- It contains low-level and high-level classes
+- Low-level resources are generated from AWS CloudFormation resources type reference (The ones starting with ‘cfn’)
+- High-level resources offer same functionality but much less detail required
+- They offer smart defaults and defined automatic configuration
+
+### Construct Structure
+
+- They are normal classes in the code
+- scope, id, props
 
 ---
 
 export default Layout;
 
-# Pros
-
-## best practices
-
-## code combination
+# Why?
 
 - Multiple Stacks
 - Multi Region
 - Supporting All Resources
 - Not easy but covers 100%
 - imperative programming interface
+- best practices
+- code combination
 
 ---
 
@@ -151,7 +163,7 @@ export default Layout;
 
 ### Can we use our existing Yaml/Json files?
 
-<img src={legacy} />
+<img src={legacy} width="1000px" />
 
 ---
 
@@ -180,11 +192,11 @@ export default Layout;
 
 <img src="images/thanks.gif" width="700px" />
 
-# @farminfarzin
-
-[CDK workshop : https://cdkworkshop.com/](https://cdkworkshop.com/)
+#### @farminfarzin
 
 ---
+
+## [CDK workshop : https://cdkworkshop.com/](https://cdkworkshop.com/)
 
 ---
 
