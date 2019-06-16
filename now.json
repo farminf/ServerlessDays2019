@@ -1,6 +1,6 @@
 {
   "name": "code-your-infrastructure-with-your-favorite-language",
-  "alias": "cuiwyfl.now.sh",
+  "alias": ["code-your-infrastructure-with-your-favorite-language", "cuiwyfl"],
   "public": true,
   "builds": [
     {

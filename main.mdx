@@ -1,12 +1,11 @@
 import { Image, Head, Appear } from "mdx-deck";
 import { Split, FullScreenCode } from "mdx-deck/layouts";
 // import { CodeSurfer } from "mdx-deck-code-surfer";
-import code from "!raw-loader!./code.js";
 export { dark as theme } from "mdx-deck/themes";
 import theme from "./theme";
-import nightOwl from "prism-react-renderer/themes/nightOwl";
 import titleLayout from "./title_layout";
 import Layout from "./layout";
+import BGImage from "./BGImage";
 import ts from "./images/ts.png";
 import java from "./images/java.jpg";
 import net from "./images/net.png";
@@ -18,6 +17,8 @@ import myStack from "./images/myStack.png";
 import myStackarc from "./images/myStackarc.png";
 import cdkarc from "./images/cdkarc.png";
 import heaven from "./images/heaven.jpg";
+import thanks from "./images/thanks.gif";
+import cfn from "./images/cfn.svg";
 
 <Head>
   <title>Code Your Infra</title>
@@ -56,7 +57,7 @@ export default Layout;
 
 ---
 
-<Image src="images/cfn.svg" />
+<Image src={"./images/cfn.svg"} />
 
 ```notes
 
@@ -69,7 +70,7 @@ NO ABSTRACTION, LOTS OF DETAILS
 
 ---
 
-<Image src="images/cfn-yaml.svg" />
+<Image src="./images/cfn-yaml.svg" />
 
 ---
 
@@ -81,7 +82,7 @@ export default Layout;
 
 # CDK
 
-<Image src={heaven} />
+<BGImage src={heaven} />
 
 ### Cloud Development Kit
 
@@ -105,7 +106,7 @@ export default Layout;
 
 ## Almost one year
 
-##Currently 0.34.0
+## 0.34.0
 
 ---
 
@@ -203,7 +204,7 @@ export default Layout;
 
 ---
 
-<img src="images/thanks.gif" width="700px" />
+<img src={thanks} width="700px" />
 
 #### @farminfarzin
 
@@ -231,5 +232,10 @@ const iam = require("@aws-cdk/aws-iam");
 
 ```notes
 cdk versions check
+cdk commands
+no lines as yaml
+test and debug
 
+
+first present my self and ussage of cdk in da, how was the experience
 ```
