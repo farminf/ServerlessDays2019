@@ -12,7 +12,7 @@ const Wrapper = styled.main`
 `
 
 const Footer = styled.footer`
-  font-size: 14px;
+  font-size: 20px;
   color: white;
   padding: 30px 100px;
   text-align: right;
@@ -26,8 +26,8 @@ const Layout = ({ children }) => (
   <Fragment>
     <Wrapper>{children}</Wrapper>
     <Footer>
-      <span>Servelessdays Milano</span>
-      <span>@FarminFarzin</span>
+      <span>ServelessDays Milano</span>
+      <span >@FarminFarzin</span>
     </Footer>
   </Fragment>
 )

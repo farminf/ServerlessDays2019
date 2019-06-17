@@ -16,7 +16,7 @@ import legacy from "./images/legacy.png";
 import cert from "./images/cert.png";
 import myStack from "./images/myStack.png";
 import myStackarc from "./images/myStackarc.png";
-import heaven from "./images/heaven.jpg";
+import heaven from "./images/heavenb1.jpg";
 import thanks from "./images/thanks.gif";
 
 <Head>
@@ -29,16 +29,16 @@ export default titleLayout;
 
 ---
 
-# why Infrastructure as Code?
+# Why Infrastructure as Code?
 
 export default Layout;
 
 <ul>
   <Appear>
-    <p>High numbers of resource creation requests</p>
+    <p>Avoind Manual Resources Creation</p>
     <p>Deployment Environments</p>
     <p>Reusability and Scalability</p>
-    <p>Versioning</p>
+    <p>Versioning / git</p>
   </Appear>
 </ul>
 
@@ -49,6 +49,22 @@ everyone is thinking about everything except IaC which should be think of in the
 ```
 
 ---
+
+export default Layout;
+
+## AWS CloudFormation
+
+## AWS SAM
+
+## AWS Amplify-CLI
+
+## Serverless Platform
+
+## Terraform
+
+---
+
+### first option
 
 # AWS CloudFormation
 
@@ -69,6 +85,8 @@ NO ABSTRACTION, LOTS OF DETAILS
 
 ---
 
+A cloudFormation stack containing a bucket,lambda and api
+
 <Image src="./images/cfn-yaml.svg" />
 
 ---
@@ -81,9 +99,9 @@ export default BGLayout;
 
 # CDK
 
-<BGImage src={heaven} />
-
 ### Cloud Development Kit
+
+<BGImage src={heaven} />
 
 ---
 
@@ -94,8 +112,8 @@ export default Layout;
 <img src={js} width="100px" height="100px" />
 <img src={ts} width="100px" height="100px" />
 <img src={net} width="100px" height="100px" />
-<img src={python} width="100px" height="100px" />
 <img src={java} width="100px" height="100px" />
+<img src={python} width="100px" height="100px" />
 
 </div>
 
@@ -103,9 +121,11 @@ export default Layout;
 
 export default Layout;
 
+## Open Source
+
 ## Almost one year
 
-## 0.34.0
+## v0.34.0
 
 ---
 
@@ -114,19 +134,16 @@ export default Layout;
 ---
 
 ```bash
-> cdk init
+ # initializes CDK application with structure
+ > cdk init
 ```
 
 ```bash
- > cdk list
+ > cdk list //list all the stack available inside the app
 ```
 
 ```bash
- > cdk synth stackName
-```
-
-```bash
- > cdk deploy stackName
+ > cdk deploy //deploys the stacks to CloudFormation
 ```
 
 ---
@@ -170,11 +187,11 @@ export default Layout;
 <ul>
   <Appear>
     <p> Multi Region </p>
-    <p> best practices</p>
-    <p> code combination </p>
-    <p> code completion </p>
-    <p> private constructs</p>
-    <p> Not easy but covers 100% </p>
+    <p> Best practices</p>
+    <p> Code combination </p>
+    <p> Code reusability </p>
+    <p> Private constructs</p>
+    <p> Not easy at first glance </p>
   </Appear>
 </ul>
 
@@ -193,23 +210,6 @@ export default Layout;
 ### Can we use our existing Yaml/Json files?
 
 <img src={legacy} width="1000px" />
-
----
-
-export default Layout;
-
-## SAM
-
-- Extension of CloudFormation
-- Single Stack
-- Serverless Apps
-- Local debugging and testing
-
-## Amplify
-
-- Focus on the Mobile and Web
-- Specific services
-- Simplicity (easy for beginners)
 
 ---
 

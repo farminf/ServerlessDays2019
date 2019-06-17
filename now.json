@@ -1,6 +1,6 @@
 {
   "name": "code-your-infrastructure-with-your-favorite-language",
-  "alias": ["code-your-infrastructure-with-your-favorite-language", "cuiwyfl"],
+  "alias": ["code-your-infrastructure-with-your-favorite-language", "cyiwyfl"],
   "public": true,
   "version": 2,
   "builds": [{ "src": "package.json", "use": "@now/static-build" }],
