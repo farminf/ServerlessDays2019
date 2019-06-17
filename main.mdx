@@ -5,6 +5,7 @@ export { dark as theme } from "mdx-deck/themes";
 import theme from "./theme";
 import titleLayout from "./title_layout";
 import Layout from "./layout";
+import BGLayout from "./bglayout";
 import BGImage from "./BGImage";
 import ts from "./images/ts.png";
 import java from "./images/java.jpg";
@@ -15,10 +16,8 @@ import legacy from "./images/legacy.png";
 import cert from "./images/cert.png";
 import myStack from "./images/myStack.png";
 import myStackarc from "./images/myStackarc.png";
-import cdkarc from "./images/cdkarc.png";
 import heaven from "./images/heaven.jpg";
 import thanks from "./images/thanks.gif";
-import cfn from "./images/cfn.svg";
 
 <Head>
   <title>Code Your Infra</title>
@@ -78,7 +77,7 @@ NO ABSTRACTION, LOTS OF DETAILS
 
 ---
 
-export default Layout;
+export default BGLayout;
 
 # CDK
 
@@ -110,7 +109,25 @@ export default Layout;
 
 ---
 
-<img src={cdkarc} width="1500px" />
+<img src={"./images/cdkarc.svg"} width="1500px" />
+
+---
+
+```bash
+cdk init
+```
+
+```bash
+ # cdk list
+```
+
+```bash
+ # cdk synth stackName
+```
+
+```bash
+ # cdk deploy stackName
+```
 
 ---
 
@@ -120,32 +137,19 @@ export default Layout;
 
 ### CloudFormation Resource Library
 
+```notes
 - Represent all the resources available on AWS
 - It contains low-level and high-level classes
 - Low-level resources are generated from AWS CloudFormation resources type reference (The ones starting with ‘cfn’)
 - High-level resources offer same functionality but much less detail required
 - They offer smart defaults and defined automatic configuration
+```
 
-### Construct Structure
+### Constructs
 
-- They are normal classes in the code
-- scope, id, props
-
----
-
-export default Layout;
-
-# Why?
-
-- Multiple Stacks
-- Multi Region
-- Supporting All Resources
-- Not easy but covers 100%
-- imperative programming interface
-- best practices
-- code combination
-- code completion
-- private constructs
+```js
+new s3.Bucket(this, "MyBucket");
+```
 
 ---
 
@@ -153,19 +157,30 @@ export default Split;
 
 ![](images/myStack.png)
 
+#### about 320 lines as yaml file
+
 ![](images/myStackarc.png)
 
 ---
 
-## Certificate Provisioning
-
 export default Layout;
 
-<img src={cert} width="1000px" />
+# WE LOVE CDK!
+
+<ul>
+  <Appear>
+    <p> Multi Region </p>
+    <p> best practices</p>
+    <p> code combination </p>
+    <p> code completion </p>
+    <p> private constructs</p>
+    <p> Not easy but covers 100% </p>
+  </Appear>
+</ul>
 
 ---
 
-## Domain Registration or codebuild or pipeline
+## Certificate Provisioning
 
 export default Layout;
 
@@ -198,12 +213,6 @@ export default Layout;
 
 ---
 
-export default Layout;
-
-# pipeline and development chain
-
----
-
 <img src={thanks} width="700px" />
 
 #### @farminfarzin
@@ -233,7 +242,7 @@ const iam = require("@aws-cdk/aws-iam");
 ```notes
 cdk versions check
 cdk commands
-no lines as yaml
+number of lines lines as yaml
 test and debug
 
 
