@@ -2,13 +2,10 @@
   "name": "code-your-infrastructure-with-your-favorite-language",
   "alias": ["code-your-infrastructure-with-your-favorite-language", "cuiwyfl"],
   "public": true,
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@now/static-build",
-      "config": {
-        "distDir": "dist"
-      }
-    }
+  "version": 2,
+  "builds": [{ "src": "package.json", "use": "@now/static-build" }],
+  "routes": [
+    { "src": "^/images/(.*)", "dest": "/images/$1" },
+    { "src": "index.html", "dest": "/index.html" }
   ]
 }

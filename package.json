@@ -7,7 +7,7 @@
     "start": "mdx-deck main.mdx",
     "build": "mdx-deck build main.mdx",
     "help": "mdx-deck",
-    "now-build": "mdx-deck build main.mdx"
+    "now-build": "mdx-deck build main.mdx --no-html && cp -r images dist/ "
   },
   "keywords": [],
   "author": "farminf<farmin.f@gmail.com>",
@@ -18,5 +18,7 @@
     "mdx-deck": "1.10.2",
     "react-svg-loader": "^3.0.3"
   },
-  "dependencies": {}
+  "dependencies": {
+    "styled-components": "^4.3.1"
+  }
 }
