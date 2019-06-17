@@ -36,10 +36,10 @@ export default Layout;
 
 <ul>
   <Appear>
-    <p>Avoind Manual Resources Creation</p>
+    <p>Avoid Manual Resources Creation</p>
     <p>Deployment Environments</p>
     <p>Reusability and Scalability</p>
-    <p>Versioning / git</p>
+    <p>Versioning/git</p>
   </Appear>
 </ul>
 
@@ -55,17 +55,15 @@ export default Layout;
 
 ## AWS CloudFormation
 
+## Terraform
+
+## Serverless Framework
+
 ## AWS SAM
 
 ## AWS Amplify-CLI
 
-## Serverless Platform
-
-## Terraform
-
 ---
-
-### first option
 
 # AWS CloudFormation
 
@@ -126,7 +124,7 @@ export default Layout;
 
 ## Almost one year
 
-## v0.34.0
+## Beta v0.34.0
 
 ---
 
@@ -134,7 +132,7 @@ export default Layout;
 
 ---
 
-### Commands
+### CDK Command Line Interface
 
 <img src={bash} width="1000px" />
 
@@ -144,8 +142,6 @@ export default Layout;
 
 # Constructs
 
-### CloudFormation Resource Library
-
 ```notes
 - Represent all the resources available on AWS
 - It contains low-level and high-level classes
@@ -153,8 +149,6 @@ export default Layout;
 - High-level resources offer same functionality but much less detail required
 - They offer smart defaults and defined automatic configuration
 ```
-
-### Constructs
 
 ```jsx
 new s3.Bucket(this, "MyBucket");
@@ -183,13 +177,15 @@ export default Layout;
     <p> Code combination </p>
     <p> Code reusability </p>
     <p> Private constructs</p>
-    <p> Not easy at first glance </p>
+    <p>
+      <font style={{ color: "red" }}> Not easy at first glance </font>
+    </p>
   </Appear>
 </ul>
 
 ---
 
-## Certificate Provisioning
+### Challenging Example: Certificate Provisioning
 
 export default Layout;
 
@@ -207,27 +203,11 @@ export default Layout;
 
 <img src={thanks} width="700px" />
 
+## @FarminFarzin
+
+#### https://digitalattitude.com
+
 #### https://code-your-infrastructure-with-your-favorite-language.now.sh
-
----
-
-## [CDK workshop : https://cdkworkshop.com/](https://cdkworkshop.com/)
-
----
-
-export default FullScreenCode;
-
-```jsx
-const path = require("path");
-
-const apiGateway = require("@aws-cdk/aws-apigateway");
-const cdk = require("@aws-cdk/cdk");
-const iam = require("@aws-cdk/aws-iam");
-```
-
----
-
-# So if I need to do it one time, ten times, or a thousand times, can I automate that?
 
 ---
 
@@ -238,5 +218,5 @@ number of lines lines as yaml
 test and debug
 
 
-first present my self and ussage of cdk in da, how was the experience
+first present my self and usage of cdk in da, how was the experience
 ```
