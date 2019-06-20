@@ -1,5 +1,5 @@
 import React from "react"
-import daImage from "./images/da-icon.png"
+import daImage from "./images/da-red.png"
 
 
 export default ({ children }) => (
@@ -19,23 +19,20 @@ export default ({ children }) => (
       
       <p
        style={{
-        color: "#00ACEE"
+        color: "#00ACEE",
+        alignSelf: "center",
       }}
       >@farminfarzin</p>
-      <p>Farmin Farzin</p>
+      <p
+       style={{
+        alignSelf: "center",
+       }}>Farmin Farzin</p>
       <div
         style={{
-          display: "grid",
-          gridTemplateColumns: "50% 50%"
         }}>
-        <img src={daImage} width="80px" height="80px" style={{
+        <img src={daImage} width="200px" height="146px" style={{
           justifySelf: "end"
         }}/>
-        <p
-          style={{
-            color: "red"
-          }}
-        >Digital Attitude</p>
       </div>
       
 
