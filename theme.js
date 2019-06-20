@@ -8,7 +8,6 @@ export default {
     // textTransform: 'uppercase',
     fontWeight: 700
   },
-
   img: {
     maxWidth: '100%'
   },
@@ -21,6 +20,9 @@ export default {
     paddingLeft: '20px',
     display: 'inline-block',
   },
+  p:{
+    fontWeight: 900
+  }
   // colors: {
   //   text: '#6AD798',
   //   background: 'rgb(1, 22, 39)',
