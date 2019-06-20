@@ -1,8 +1,6 @@
 import { Image, Head, Appear } from "mdx-deck";
 import { Split, FullScreenCode } from "mdx-deck/layouts";
-// import { CodeSurfer } from "mdx-deck-code-surfer";
-export { dark as theme } from "mdx-deck/themes";
-import theme from "./theme";
+export { default as theme } from "./theme";
 import titleLayout from "./title_layout";
 import Layout from "./layout";
 import BGLayout from "./bglayout";
@@ -29,7 +27,7 @@ export default titleLayout;
 
 ---
 
-## what is Iac?
+## what is Infrastructure as Code?
 
 @todo
 
@@ -112,17 +110,26 @@ export default Layout;
 
 ---
 
-<img src={angry} width="1000px" />
+<img src={angry} width="1200px" />
 
 ---
 
 export default BGLayout;
 
+<BGImage src={heaven} />
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
 # AWS CDK
 
 ### Cloud Development Kit
-
-<BGImage src={heaven} />
 
 ---
 
@@ -152,13 +159,17 @@ export default Layout;
 
 ---
 
-<img src={"./images/cdkarc.svg"} width="1500px" />
+<Image src={"./images/cdkarc.svg"} />
 
 ---
 
 export default Layout;
 
 # Constructs
+
+```jsx
+new s3.Bucket(this, "MyBucket");
+```
 
 ```notes
 - Represent all the resources available on AWS
@@ -168,15 +179,11 @@ export default Layout;
 - They offer smart defaults and defined automatic configuration
 ```
 
-```jsx
-new s3.Bucket(this, "MyBucket");
-```
-
 ---
 
 export default Split;
 
-![](images/myStack.svg)
+![](images/myStack.png)
 
 ![](images/myStackarc.png)
 
@@ -186,7 +193,7 @@ export default Split;
 
 export default Layout;
 
-<img src={cert} width="1000px" />
+<img src={cert} width="1200px" />
 
 ```notes
 - we did this and said we share it
@@ -199,7 +206,7 @@ export default Layout;
 
 ### Can we use our existing Yaml/Json files?
 
-<img src={legacy} width="1000px" />
+<img src={legacy} width="1200px" />
 
 ---
 
